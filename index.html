@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css"> 
+
+    <title>CNSD 2022</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="/index.html" class="logo">
+                <img src="/assets/Logo.svg" alt="CNSD 2022" class="logo-image">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link active" href="/index.html">Home</a></li>
+                <!-- <li><a class="nav-link" href="/about.html">About</a></li> -->
+                <li><a class="nav-link" href="/registration.html">Registration</a></li>
+                <li><a class="nav-link" href="/venue.html">Venue</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+                <div class="title">
+                    <h1>CNSD 2022</h1>
+                </div>
+                <div class="description">
+                    <h2>Conference on Nonlinear Systems and Dynamics</h2>
+                </div>
+                <div class="date">
+                    <h3>15th to 18th December 2022 (Thursday - Sunday)</h3>
+                </div>
+                <div class="place">
+                    <h2>@ IISER Pune, India</h2>
+                </div>
+                <div class="cta">
+                    <button>Register Now</button>
+                </div>
+                <div class="scroll">
+                    <img src="/assets/scroll.png" alt="scroll" class="scroll-image">
+                </div>
+        </section>
+
+        <section class="blurb">
+            <div class="blurb-text">
+                <p> <span class="cnsd">CNSD</span> is a regular series of meetings on nonlinear dynamics and complex systems held in India approximately
+                    once every year. These conferences bring together a very large fraction of researchers within India working 
+                    on integrable and chaotic systems, complex networks, time series analysis, and their uses in modeling phenomena 
+                    in engineering, biological, and physical sciences. The 14th edition of <span class="cnsd">CNSD</span> will be held at the <span class="iiser">Indian Institute of 
+                    Science Education and Research (IISER) Pune</span>. In addition to the above mentioned topics, this edition aims to focus
+                    on emerging areas at the intersection of dynamics, data science, and machine learning and applications in medical 
+                    sciences.
+                </p>
+            </div>
+            <div class="wordcloud">
+                <img src="/assets/wordcloud.svg" alt="wordcloud" class="wordcloud-image">
+            </div>
+            
+        </section>
+
+        <!-- <div class="big-circle">
+            <img src="/assets/big-circle.svg" alt="big-circle" class="big-circle-image">
+        </div> -->
+        
+        <div class="small-circle">
+            <img src="/assets/small-circle.svg" alt="small-circle" class="small-circle-image">
+        </div>
+        <div class="medium-circle">
+            <img src="/assets/medium-circle.svg" alt="medium-circle" class="medium-circle-image">
+        </div>
+    </main>
+    
+    <footer>
+    </footer>
+
+
+    <script>
+        const buttonToScroll = document.querySelector('.scroll-image');
+        buttonToScroll.addEventListener('click', function() {
+            window.scrollBy({
+                top: window.innerHeight,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
