@@ -29,29 +29,9 @@
             </ul>
         </nav>
     </header>
+    <div class="header-fake"></div>
 
     <main>
-        <!-- <section class="hero">
-                <div class="title">
-                    <h1>CNSD 2022</h1>
-                </div>
-                <div class="description">
-                    <h2>Conference on Nonlinear Systems and Dynamics</h2>
-                </div>
-                <div class="date">
-                    <h3>15th to 18th December 2022 (Thursday - Sunday)</h3>
-                </div>
-                <div class="place">
-                    <h2>@ IISER Pune, India</h2>
-                </div>
-                <div class="cta">
-                    <button>Register Now</button>
-                </div>
-                <div class="scroll">
-                    <img src="/assets/scroll.png" alt="scroll" class="scroll-image">
-                </div>
-        </section> -->
-
         <section class="blurb-venue">
 
             <div class="venue-text">
@@ -90,12 +70,12 @@
             <img src="/assets/big-circle.svg" alt="big-circle" class="big-circle-image">
         </div> -->
         
-        <div class="small-circle">
+        <!-- <div class="small-circle">
             <img src="/assets/small-circle.svg" alt="small-circle" class="small-circle-image">
-        </div>
-        <div class="medium-circle">
+        </div> -->
+        <!-- <div class="medium-circle">
             <img src="/assets/medium-circle.svg" alt="medium-circle" class="medium-circle-image">
-        </div>
+        </div> -->
     </main>
     
     <footer>
@@ -109,15 +89,22 @@
     </footer>
 
 
-    <script>
+    <!-- <script>
         const buttonToScroll = document.querySelector('.scroll-image');
         buttonToScroll.addEventListener('click', function() {
+            var height = window.innerHeight;
+            var width = window.innerWidth;
+            var pos = height - height * 0.1;
+            if (width < 900){
+                var pos = height - height * 0.25;
+            }
+
             window.scrollBy({
-                top: window.innerHeight,
+                top: window.pos,
                 left: 0,
                 behavior: 'smooth'
             });
-        });
+        }); -->
     </script>
 </body>
 </html>

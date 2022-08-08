@@ -30,6 +30,8 @@
         </nav>
     </header>
 
+    <div class="header-fake"></div>
+
     <main>
         <section class="hero">
             <div class="announcement">
@@ -61,15 +63,19 @@
     </footer>
 
 
-    <script>
+    <!-- <script>
         const buttonToScroll = document.querySelector('.scroll-image');
         buttonToScroll.addEventListener('click', function() {
+            var height = window.innerHeight;
+            var width = window.innerWidth;
+            var pos = height - height * 0.1;
+           
             window.scrollBy({
-                top: window.innerHeight,
+                top: window.pos,
                 left: 0,
                 behavior: 'smooth'
             });
         });
-    </script> 
+    </script> -->
 </body>
 </html>

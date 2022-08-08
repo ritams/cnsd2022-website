@@ -29,6 +29,7 @@
             </ul>
         </nav>
     </header>
+    <div class="header-fake"></div>
 
     <main>
         <section class="hero">
@@ -42,7 +43,7 @@
                     <h3>15th to 18th December 2022 (Thursday - Sunday)</h3>
                 </div>
                 <div class="place">
-                    <h2>@ IISER Pune, India</h2>
+                    <h2>IISER Pune, India</h2>
                 </div>
                 <div class="reg-info">
                     <p>Registration information will be updated soon.</p>
@@ -95,15 +96,33 @@
     </footer>
 
 
+    
     <script>
         const buttonToScroll = document.querySelector('.scroll-image');
         buttonToScroll.addEventListener('click', function() {
+            var height = window.innerHeight;
+            var width = window.innerWidth;
+            var pos = height - height * 0.1;
+            if (width < 900){
+                var pos = height - height * 0.25;
+            }
+            console.log(pos);
             window.scrollBy({
-                top: window.innerHeight,
+                top: pos,
                 left: 0,
                 behavior: 'smooth'
             });
         });
     </script>
+    <!-- <script>
+        const buttonToScroll = document.querySelector('.scroll-image');
+        buttonToScroll.addEventListener('click', function() {
+            window.scrollBy({
+                top: window.innerHeight - window.innerHeight * 0.25,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script> -->
 </body>
 </html>
