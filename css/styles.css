@@ -249,7 +249,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 5vh;
+    padding-left: 10vh;
     padding-right: 5vh;
 }
 .iiser-full-name {
@@ -260,7 +260,7 @@ main {
     justify-content: space-around;
     font-size: 40px;
     font-weight: 300;
-    padding-left: 5vh;
+    padding-left: 10vh;
     padding-right: 5vh;
     
 }
@@ -280,7 +280,7 @@ main {
     line-height: 2;
     margin-right: 5vw;
     text-align: justify;
-    padding-left: 5vh;
+    padding-left: 10vh;
     padding-right: 5vh;
 
 }
@@ -664,4 +664,8 @@ li {
         text-align: center;
         opacity: 0.2
     } */
+
+    .blurb {
+        width: 95%;
+    }
   }
