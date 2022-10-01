@@ -7,40 +7,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNSD 2022</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="main.js"></script>
 </head>
 
 <body>
-    <header class="primary-header">
-        <div class="container">
-            <a href="index.html" class="logo">CNSD 2022</a>
-            <nav class="primary-navigation">
-                <ul role="list" class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="registration.html"></a>Registration</a></li>
-                    <li><a href="venue.html"></a>Venue</li>
-                    <li><a href="organizers.html"></a>Organizers</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <p class="water-mark">
+        <img src="water.svg" alt="">
+    </p>
+    <div class="big-container">
+        <header class="primary-header">
+            <div class="nav-container">
+                <a href="index.html" class="logo">CNSD <span class="year">2022</span></a>
+                <nav class="primary-navigation">
+                    <ul role="list" class="nav-list">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href=" venue.html">Venue</a></li>
+                        <li><a href="organizers.html">Organizers</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <section>
-            <div class="container">
-                <div class="even-column">
+        <main>
+
+            <section class="hero">
+                <div class="rot-rect">
+                    <!-- <img src="rectangle.svg" alt="" class="rect"> -->
+                </div>
+
+                <div class="even-column hero-container">
                     <div>
-                        <h1 class="fs-primary-heading fw-bold">CNSD</h1>
-                        <h2 class="fs-secondary-heading fw-semibold">Conference on Nonlinear Systems and Dynamics</h2>
+                        <h1 class="fs-primary-heading fw-bold home-title">CNSD <span class="year">2022</span></h1>
+                        <h2 class="fs-secondary-heading fw-semibold home-subtitle">Conference on Nonlinear Systems and
+                            Dynamics
+                        </h2>
+                        <p class="date">15 to 18 December 2022</p>
+                        <p class="day">(Thursday - Sunday)</p>
+                        <p class="location">IISER Pune, India</p>
+                        <div class="cta">
+                            <button class="warm-button"><a href="#">REGISER NOW</a></button>
+                        </div>
                     </div>
 
-                    <div>
-
+                    <div class="red-bg half">
                     </div>
                 </div>
+
+            </section>
+
+            <section class="about-cnsd">
+                <p class="text">
+                    CNSD is a regular series of meetings on nonlinear dynamics and complex systems held in India
+                    approximately once every year. These conferences bring together a very large fraction of researchers
+                    within India working on integrable and chaotic systems, complex networks, time series analysis, and
+                    their uses in modeling phenomena in engineering, biological, and physical sciences. The 14th edition
+                    of CNSD will be held at the Indian Institute of Science Education and Research (IISER) Pune. In
+                    addition to the above mentioned topics, this edition aims to focus on emerging areas at the
+                    intersection of dynamics, data science, and machine learning and applications in medical sciences.
+                </p>
+            </section>
+
+            <section class="theme">
+                <div class="wave">
+
+                    <img src="wave.svg" alt="">
+
+                </div>
+
+                <!-- 
+                <svg width="2624" height="425" viewBox="0 0 2624 425" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2623.7 98.9679C2623.7 98.9679 2457.95 -16.6955 2106 3.50005C1758.63 23.4331 1306.01 194.233 1004 343.5C396 644 -0.295898 3.50005 -0.295898 3.50005"
+                        stroke="black" />
+                </svg> -->
+
+
+                <h2 class="theme-title">Theme</h2>
+                <div class="transparent-box">
+                    <div class="word-cloud">
+                        <p>fkdjashf</p>fajklsdjla
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+
+    </div>
+
+    <footer>
+        <div class="big-container">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3 class="footer-title">CNSD <span class="year">2022</span></h3>
+                    <p class="footer-text">15 to 18 December 2022</p>
+                    <p class="footer-text">IISER Pune, India</p>
+                </div>
+                <div class="footer-middle">
+                    <h3 class="footer-title">Site <span class="year">map</span></h3>
+                    <p class="footer-text">15 to 18 December 2022</p>
+                    <p class="footer-text">IISER Pune, India</p>
+                </div>
+                <div class="footer-right">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <p class="footer-text">Email:cnsd2022@gmail.com</p>
+                    <p class="footer-text">Phone: +91 1234567890</p>
+                </div>
             </div>
-        </section>
-    </main>
+    </footer>
 </body>
 
 </html>
