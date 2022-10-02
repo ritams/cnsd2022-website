@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
     <script src="main.js"></script>
 </head>
 
@@ -20,18 +20,24 @@
     <p class="water-mark">
         <img src="water.svg" alt="">
     </p>
-
-
     <div class="big-container">
+        <div class="extended-container">
+            <img src="iiser-main-building.png" alt="" class="venue-banner">
+            <div class="venue-wave">
+
+                <img src="wave.svg" alt="">
+
+            </div>
+        </div>
 
         <header class="primary-header">
             <div class="nav-container">
                 <a href="index.html" class="logo">CNSD <span class="year">2022</span></a>
                 <nav class="primary-navigation">
                     <ul role="list" class="nav-list">
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="registration.html">Registration</a></li>
-                        <li><a href=" venue.html">Venue</a></li>
+                        <li><a href=" venue.html" class="active">Venue</a></li>
                         <li><a href="organizers.html">Organizers</a></li>
                     </ul>
                 </nav>
@@ -41,48 +47,43 @@
         <main>
 
             <section class="hero">
-                <img src="./mandelbrot.svg" alt="" class="mandelbrot">
                 <div class="rot-rect"></div>
-
-                <div class="even-column hero-container">
-                    <div>
-                        <h1 class="fs-primary-heading fw-bold home-title">CNSD <span class="year">2022</span></h1>
-                        <h2 class="fs-secondary-heading fw-semibold home-subtitle">Conference on Nonlinear Systems and
-                            Dynamics
-                        </h2>
-                        <p class="date">15 to 18 December 2022</p>
-                        <p class="day">(Thursday - Sunday)</p>
-                        <p class="location">IISER Pune, India</p>
-                        <div class="cta">
-                            <button class="warm-button"><a href="registration.html">REGISTER NOW</a></button>
+                <div>
+                    <h1 class="tagline">...where tomorrow's science begins today</h1>
+                    <div class="iiser-logo-name">
+                        <img src="iiser-logo.svg" alt="">
+                        <div class="name-location">
+                            <h1 class="iiser-name">Indian Institute of Science</h1>
+                            <h1 class="iiser-name">Education and Research </h1>
+                            <p class="iiser-location">Pune, India</p>
                         </div>
-                    </div>
-
-                    <div class="half">
 
                     </div>
+
                 </div>
 
             </section>
 
             <section class="about-cnsd">
-                <p class="text">
-                    CNSD is a regular series of meetings on nonlinear dynamics and complex systems held in India
-                    approximately once every year. These conferences bring together a very large fraction of researchers
-                    within India working on integrable and chaotic systems, complex networks, time series analysis, and
-                    their uses in modeling phenomena in engineering, biological, and physical sciences. The 14th edition
-                    of CNSD will be held at the Indian Institute of Science Education and Research (IISER) Pune. In
-                    addition to the above mentioned topics, this edition aims to focus on emerging areas at the
-                    intersection of dynamics, data science, and machine learning and applications in medical sciences.
+                <p class="venue-text">
+                    The Indian Institute of Science Education and Research (IISER) Pune is a premier institute dedicated
+                    to research and teaching in the basic sciences. Established with the dream of enabling students to
+                    shape the future of humanity by inventing novel and sustainable solutions for societal problems,
+                    IISER Pune provides a vibrant and intellectually stimulating environment for students at various
+                    levels of their academic careers.
+                </p>
+                <p class="more-info">
+                    To learn more about the institute, please visit our <a href="https://www.iiserpune.ac.in/"
+                        class="link-to-iiser-site">webpage</a>.
                 </p>
             </section>
 
             <section class="theme">
-                <div class="wave">
+                <!-- <div class="wave">
 
                     <img src="wave.svg" alt="">
 
-                </div>
+                </div> -->
 
                 <!-- 
                 <svg width="2624" height="425" viewBox="0 0 2624 425" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,9 +93,10 @@
                 </svg> -->
 
 
-                <h2 class="theme-title">Topics</h2>
+                <h2 class="theme-title">How to reach</h2>
                 <div class="transparent-box">
                     <div class="word-cloud">
+                        <p class="text active">We will update the information soon.</p>
                     </div>
                 </div>
 
@@ -103,6 +105,9 @@
 
 
     </div>
+
+
+
     <footer>
         <div class="big-container">
             <div class="footer-container">
@@ -113,11 +118,10 @@
                 </div>
                 <div class="footer-middle">
                     <h3 class="footer-title">Site <span class="year">map</span></h3>
-                    <p class="footer-text"><a href="index.html" class="link">Home</a></p>
-                    <p class="footer-text"><a href="registration.html" class="link">Registration</a></p>
-                    <p class="footer-text"><a href="venue.html" class="link">Venue</a></p>
-                    <p class="footer-text"><a href="organizers.html" class="link">Organizers</a></p>
-
+                    <p class="footer-text">Home</p>
+                    <p class="footer-text">Registration</p>
+                    <p class="footer-text">Venue</p>
+                    <p class="footer-text">Organizers</p>
                 </div>
                 <div class="footer-right">
                     <h3 class="footer-title">Contact <span class="year">us</span></h3>
@@ -126,6 +130,7 @@
                 </div>
             </div>
     </footer>
+
 </body>
 
 </html>
