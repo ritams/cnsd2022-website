@@ -362,14 +362,18 @@ footer {
 /* ; */
 
 .water-mark {
+    /* background-color: red; */
     position: absolute;
-    /* object-fit: cover; */
-    width: 600vw;
-    opacity: 0.05;
-
-    left: 50%;
-    top: 10%;
+    /* opacity: 0.1; */
     overflow-x: hidden;
+    z-index: 0;
+}
+
+.complex-system {
+    background-color: red;
+    right: 50%;
+
+
 }
 
 .reg-hero {
@@ -914,4 +918,50 @@ p {
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     box-shadow: 0 10px 20px 0px var(--clr-bg-900);
+}
+
+
+/* modify the  above css to be mobile friendly using media query */
+
+@media screen and (max-width: 400px) {
+    body {
+        /* background: red; */
+    }
+
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-bottom: 2rem; */
+    }
+
+    :root {
+        --fs-400: 1rem;
+        --fs-500: 1.25rem;
+        --fs-600: 1.5rem;
+        --fs-700: 2rem;
+        --fs-800: 2.5rem;
+        --fs-900: 3rem;
+    }
+
+    img {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .home-subtitle {
+        font-size: var(--fs-700);
+        font-weight: var(--fw-light);
+        color: var(--clr-text-200);
+        padding-bottom: 2vh;
+    }
 }
