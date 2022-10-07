@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNSD 2022</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="main.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+</head>
+
+<body>
+    <!-- <p class="water-mark">
+        <img src="Complex systems.svg" alt="" class="complex-system">
+        <img src="Fractals.svg" alt="" class="fractals">
+        <img src="ML.svg" alt="" class="ml">
+        <img src="Networks.svg" alt="" class="networks">
+        <img src="Nonlinear Dynamics.svg" alt="" class="nonlinear-dynamics">
+        <img src="Chaos.svg" alt="" class="chaos">
+    </p> -->
+
+
+    <div class="big-container">
+
+        <header class="primary-header">
+            <div class="nav-container">
+                <a href="index.html" class="logo">CNSD <span class="year">2022</span></a>
+                <nav class="primary-navigation">
+                    <ul role="list" class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="speakers.html" class="active">Speakers</a></li>
+                        <li><a href=" venue.html">Venue</a></li>
+                        <li><a href="accomodation.html">Accomodation</a></li>
+                        <li><a href="organizers.html">Organizers</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero">
+                <div class="rot-rect"></div>
+
+                <div class="even-column hero-container">
+                    <div class="mobile">
+                        <h1 class="fs-primary-heading fw-bold home-title">CNSD <span class="year">Speakers</span></h1>
+                    </div>
+                </div>
+
+                <div class="plenary-speakers-container">
+                    <h1 class="plenary-speakers-title"> Plenary Speakers</h1>
+                    <p class="info">Names of plenary Speakers will be updated soon.</p>
+                </div>
+
+                <div class="invited-speakers-container">
+                    <h1 class="invited-speakers-title">Invited Speakers</h1>
+                    <div class="all-invited-speakers">
+                        <div class="speaker">
+                            <p class="speaker-name">Areejit Samal</p>
+                            <p class="affiliation">The Institute of Mathematical Sciences</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Dibakar Ghosh</p>
+                            <p class="affiliation">Indian Statistical Institute</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Punit Parmananda</p>
+                            <p class="affiliation">IIT, Bombay</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">K. Murali</p>
+                            <p class="affiliation">IIT, Madras</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Manish Shrimali</p>
+                            <p class="affiliation">Central University of Rajasthan</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">G. Ambika</p>
+                            <p class="affiliation">IISER, Tirupati</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">M. Senthilvelan</p>
+                            <p class="affiliation">Bharathidasan University</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Soumitro Banerjee</p>
+                            <p class="affiliation">IISER, Kolkata</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Shashi Thutupalli</p>
+                            <p class="affiliation">NCBS</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">P. Muruganandam</p>
+                            <p class="affiliation">Bharathidasan University</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Sarika Jalan</p>
+                            <p class="affiliation">IIT Indore</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Rahul Siddharthan</p>
+                            <p class="affiliation">The Institute of Mathematical Sciences</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Pragya Shukla</p>
+                            <p class="affiliation">IIT, Kharagpur</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Sudhir Jain</p>
+                            <p class="affiliation">Bhabha Atomic Research Centre</p>
+                        </div>
+
+                        <div class="speaker">
+                            <p class="speaker-name">Shashi Srivastava</p>
+                            <p class="affiliation">Variable Energy Cyclotron Centre</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Vimal kishore</p>
+                            <p class="affiliation">Banaras Hindu University</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Santosh kumar</p>
+                            <p class="affiliation">Shiv Nadar University</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Sagar Chakraborty</p>
+                            <p class="affiliation">IIT, Kanpur</p>
+                        </div>
+                        <div class="speaker">
+                            <p class="speaker-name">Satyam mukherjee</p>
+                            <p class="affiliation">Shiv Nadar University</p>
+                        </div>
+                        <div class="speaker blank">
+                            <p class="speaker-name"></p>
+                            <p class="affiliation"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+
+
+    </div>
+    <footer>
+        <div class="big-container">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3 class="footer-title">CNSD <span class="year">2022</span></h3>
+                    <p class="footer-text">15 to 18 December 2022</p>
+                    <p class="footer-text">IISER Pune, India</p>
+                </div>
+                <div class="footer-middle">
+                    <h3 class="footer-title">Site <span class="year">map</span></h3>
+                    <p class="footer-text"><a href="index.html" class="link">Home</a></p>
+                    <p class="footer-text"><a href="registration.html" class="link">Registration</a></p>
+                    <p class="footer-text"><a href="venue.html" class="link">Venue</a></p>
+                    <p class="footer-text"><a href="organizers.html" class="link">Organizers</a></p>
+
+                </div>
+                <div class="footer-right">
+                    <h3 class="footer-title">Contact <span class="year">us</span></h3>
+                    <p class="footer-text">Email: cnsd2022@acads.iiserpune.ac.in</p>
+
+                </div>
+            </div>
+    </footer>
+
+    <script>
+
+
+
+        var layout = cloud()
+            .size([500, 500])
+            .words([
+                "Hello", "world", "normally", "you", "want", "more", "words",
+                "than", "this"].map(function (d) {
+                    return { text: d, size: 10 + Math.random() * 90, test: "haha" };
+                }))
+            .padding(5)
+            .rotate(function () { return ~~(Math.random() * 2) * 90; })
+            .font("Impact")
+            .fontSize(function (d) { return d.size; })
+            .on("end", draw);
+
+        layout.start();
+
+        function draw(words) {
+            d3.select("#my_dataviz").append("svg")
+                .attr("width", layout.size()[0])
+                .attr("height", layout.size()[1])
+                .append("g")
+                .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function (d) { return d.size + "px"; })
+                .style("font-family", "Impact")
+                .attr("text-anchor", "middle")
+                .attr("transform", function (d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function (d) { return d.text; });
+        }
+    </script>
+</body>
+
+</html>
