@@ -152,11 +152,18 @@
                 </div>
                 <div class="footer-middle">
                     <h3 class="footer-title">Site <span class="year">map</span></h3>
-                    <p class="footer-text"><a href="index.html" class="link">Home</a></p>
-                    <p class="footer-text"><a href="registration.html" class="link">Registration</a></p>
-                    <p class="footer-text"><a href="venue.html" class="link">Venue</a></p>
-                    <p class="footer-text"><a href="organizers.html" class="link">Organizers</a></p>
-
+                    <div class="column-container">
+                        <div class="column">
+                            <p class="footer-text"><a href="index.html" class="link">Home</a></p>
+                            <p class="footer-text"><a href="registration.html" class="link">Registration</a></p>
+                            <p class="footer-text"><a href="speakers.html" class="link">Speakers</a></p>
+                        </div>
+                        <div class="column">
+                            <p class="footer-text"><a href="venue.html" class="link">Venue</a></p>
+                            <p class="footer-text"><a href="accomodation.html" class="link">Accomodation</a></p>
+                            <p class="footer-text"><a href="organizers.html" class="link">Organizers</a></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer-right">
                     <h3 class="footer-title">Contact <span class="year">us</span></h3>
@@ -183,22 +190,24 @@
 
         var padding_word = 20;
         var factor = 2;
+        var height = 500;
         if (window.innerWidth < 768) {
             padding_word = 10;
-            factor = 1;
+            factor = 0.5;
+            height = 200
         }
 
 
 
         var margin = {
-            top: 10,
-            right: 10,
-            bottom: 10,
-            left: 10
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
         };
 
-        var width = document.querySelector('#my_dataviz').clientWidth - margin.left - margin.right,
-            height = 500 - margin.top - margin.bottom;
+        var width = document.querySelector('#my_dataviz').clientWidth - margin.left - margin.right;
+
         // append the svg object to the body of the page
         var svg = d3.select("#my_dataviz").append("svg")
             .attr("width", width + margin.left + margin.right)
