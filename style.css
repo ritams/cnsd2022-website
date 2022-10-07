@@ -694,12 +694,13 @@ p {
 }
 
 .four-buttons {
-    width: 100%;
+    background-color: var(--clr-accent-warm);
+    border-radius: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5vh;
+    margin-top: 5vh;
 }
 
 .warm-button-small {
@@ -711,7 +712,7 @@ p {
     font-size: var(--fs-500);
     font-weight: var(--fw-semibold);
     cursor: pointer;
-    min-width: 100%;
+    /* min-width: 100%; */
 }
 
 .warm-button-small:hover,
@@ -1079,6 +1080,10 @@ p {
     min-height: 80vh;
 }
 
+.topnav {
+    display: none
+}
+
 /* modify the  above css to be mobile friendly using media query */
 
 @media screen and (max-width: 1100px) {
@@ -1400,5 +1405,70 @@ p {
         max-width: 100%;
         text-align: left;
         padding-bottom: 2rem;
+    }
+
+    .warm-button-small {
+        min-width: 100%;
+    }
+
+    .df2 {
+        max-width: 100%;
+        margin-bottom: 1rem;
+        /* background-color: red; */
+    }
+
+    .topnav {
+        display: block;
+        border-radius: 1em;
+        overflow: hidden;
+        background-color: var(--clr-bg-900);
+        /* position: fixed; */
+        position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+
+        /* color: white; */
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: flex;
+
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: var(--clr-bg-900);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        background-color: var(--clr-bg-700);
+        color: black;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        /* background-color: var(--clr-bg-700); */
+        color: var(--clr-accent-warm);
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+
+    .four-buttons {
+        background-color: unset
     }
 }
