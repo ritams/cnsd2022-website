@@ -307,6 +307,7 @@ body {
 .transparent-box {
     padding: 5vh;
     min-height: 70vh;
+    height: 100%;
     width: 100%;
     background-color: rgb(55, 27, 88, 0.5);
     border-radius: 2rem;
@@ -366,15 +367,15 @@ footer {
 /* width: 700px; */
 /* ; */
 
-.water-mark {
+/* .water-mark {
     /* background-color: red; */
-    position: absolute;
-    /* opacity: 0.1; */
-    overflow-x: hidden;
-    z-index: 0;
-}
+/* position: absolute; */
+/* opacity: 0.1; */
+/* overflow-x: hidden; */
+/* z-index: 0; */
+/* } */
 
-.complex-system {
+*/ .complex-system {
     background-color: red;
     right: 50%;
 
@@ -710,6 +711,7 @@ p {
     font-size: var(--fs-500);
     font-weight: var(--fw-semibold);
     cursor: pointer;
+    min-width: 100%;
 }
 
 .warm-button-small:hover,
