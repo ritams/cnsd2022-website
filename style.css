@@ -335,8 +335,8 @@ footer {
     /* align-items: center; */
     justify-content: space-between;
     /* padding: 5vh; */
-    padding-top: 2%;
-    padding-bottom: 10%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .footer-title {
@@ -704,7 +704,7 @@ p {
 }
 
 .warm-button-small {
-    width: 33%;
+    width: 33.33%;
     background-color: var(--clr-accent-warm);
     color: var(--clr-text-100);
     padding: 1rem 2rem;
