@@ -305,7 +305,7 @@ body {
 }
 
 .transparent-box {
-    padding: 2vh;
+    padding: 5rem;
     /* min-height: 70vh; */
     /* height: 100%; */
     width: 100%;
@@ -1471,6 +1471,11 @@ footer {
         font-size: 17px;
         display: flex;
 
+    }
+
+    .transparent-box {
+        padding: 1rem;
+        border-radius: 1rem;
     }
 
     /* Style the hamburger menu */
