@@ -1,2 +1,4 @@
-# cnsd2022-website
-This a a Hugo based static site for the conference on nonlinear systems and dynamics
+# CNSD 2022 Website
+
+This is the main repository of the website of the Conference on Nonlinear Systems and Dynamics 2022, to be held in December 2022.
+

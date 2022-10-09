@@ -160,6 +160,14 @@ body {
     min-width: 50%;
 }
 
+
+a {
+    /* display: block; */
+    /* width: 200px; */
+    /* margin: 2rem; */
+    /* background-color: red; */
+}
+
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -694,7 +702,7 @@ p {
 }
 
 .four-buttons {
-    background-color: var(--clr-accent-warm);
+    /* background-color: var(--clr-accent-warm); */
     border-radius: 2rem;
     display: flex;
     flex-direction: row;
@@ -704,7 +712,9 @@ p {
 }
 
 .warm-button-small {
-    width: 33.33%;
+    text-align: center;
+    /* display: block; */
+    width: 50%;
     background-color: var(--clr-accent-warm);
     color: var(--clr-text-100);
     padding: 1rem 2rem;

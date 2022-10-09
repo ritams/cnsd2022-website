@@ -74,9 +74,9 @@
 
             <section class="hero">
                 <!-- <img src="./mandelbrot.svg" alt="" class="mandelbrot"> -->
-                <img src="time-series.svg" alt="" class="time-series">
-                <img src="neural-net.svg" alt="" class="neural-net">
-                <img src="network.svg" alt="" class="network">
+                <img src="assets/time-series.svg" alt="" class="time-series">
+                <img src="assets/neural-net.svg" alt="" class="neural-net">
+                <img src="assets/network.svg" alt="" class="network">
                 <div class="rot-rect"></div>
 
                 <div class="even-column hero-container">
@@ -89,7 +89,7 @@
                         <p class="day">(Thursday - Sunday)</p>
                         <p class="location">IISER Pune, India</p>
                         <div class="cta">
-                            <button class="warm-button"><a href="registration.html">REGISTER NOW</a></button>
+                            <a href="registration.html"><span class="warm-button">REGISTER NOW</span></a>
                         </div>
                     </div>
 
@@ -112,7 +112,7 @@
             <section class="theme">
                 <div class="wave">
 
-                    <img src="wave.svg" alt="">
+                    <img src="assets/wave.svg" alt="">
 
                 </div>
 
@@ -127,7 +127,7 @@
                 <h2 class="theme-title">Topics</h2>
                 <div class="transparent-box">
                     <div class="word-cloud">
-                        <img src="word-cloud.svg" alt="" class="cloud">
+                        <img src="assets/word-cloud.svg" alt="" class="cloud">
                     </div>
                 </div>
 
@@ -168,81 +168,6 @@
             </div>
     </footer>
 
-    <script src="https://d3js.org/d3.v4.js"></script>
-
-
-    <script>
-        // List of words
-        var myWords = [{ word: "Machine Learning", size: "15" },
-        { word: "Neural Networks", size: "10" }, { word: "Time Series analysis", size: "10" },
-        { word: "Networks", size: "20" }, { word: "Chaos", size: "10" }, { word: "Fractals", size: "10" }, { word: "Nonlinear Dynamics", size: "20" },
-        { word: "Data Science", size: "20" }, { word: "Medical applications", size: "20" },
-        { word: "Complex Systems", size: "25" }, { word: "Integrable Systems", size: "10" }, { word: "Quantum Chaos", size: "10" },
-        { word: "Solitons", size: "10" }, { word: "Pattern formations", size: "10" }, { word: "Self organization", size: "10" },
-        { word: "Critical Phemonena", size: "10" },
-        ];
-
-        var padding_word = 20;
-        var factor = 2;
-        var height = 500;
-        if (window.innerWidth < 768) {
-            padding_word = 10;
-            factor = 0.5;
-            height = 200
-        }
-
-
-
-        var margin = {
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0
-        };
-
-        var width = document.querySelector('#my_dataviz').clientWidth - margin.left - margin.right;
-
-        // append the svg object to the body of the page
-        var svg = d3.select("#my_dataviz").append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform",
-                "translate(" + margin.left + "," + margin.top + ")");
-
-        // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
-        // Wordcloud features that are different from one word to the other must be here
-        var layout = d3.layout.cloud()
-            .size([width, height])
-            .words(myWords.map(function (d) { return { text: d.word, size: d.size * factor }; }))
-            .padding(padding_word)        //space between words
-            .rotate(function () { return ~~(Math.random() * 2) * 0; })
-            .fontSize(function (d) { return d.size; })      // font size of words
-            .on("end", draw);
-        layout.start();
-
-        // This function takes the output of 'layout' above and draw the words
-        // Wordcloud features that are THE SAME from one word to the other can be here
-        function draw(words) {
-            svg
-                .append("g")
-                .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
-                .selectAll("text")
-                .data(words)
-                .enter().append("text")
-                .style("font-size", function (d) { return d.size; })
-                .style("fill", "#C8C8C8")
-                .attr("text-anchor", "middle")
-                .style("font-family", "Popins , sans-serif")
-                .style('font-weight', 'bold')
-                .style('margin', '100px')
-                .attr("transform", function (d) {
-                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-                })
-                .text(function (d) { return d.text; });
-        }
-
-    </script>
 </body>
 
 </html>
